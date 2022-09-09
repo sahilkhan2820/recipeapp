@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:nasa/src/providers/pictures_provider.dart';
 import 'package:nasa/src/providers/recipeprovider.dart';
 import 'package:nasa/src/screens/homepage.dart';
-import 'package:nasa/src/screens/nasapage.dart';
 
 import 'package:nasa/src/screens/screens.dart';
 import 'package:provider/provider.dart';
@@ -38,8 +36,6 @@ class MyApp extends StatelessWidget {
       title: 'SAHIL KHAN',
       initialRoute: 'homepage',
       routes: {
-        'home': (context) => const NasaScreen(), // redirect to home screen
-        'details': (context) => const DetailsScreen(),
         // redirect to detail screen
         'homepage': (context) => const Homepage(), // redirect to home screen
       },

@@ -6,7 +6,6 @@ import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 
 import '../helpers/debouncer.dart';
-import '../models/picture.dart';
 import '../models/recipe.dart';
 
 class RecipeProvider extends ChangeNotifier {
@@ -28,10 +27,10 @@ class RecipeProvider extends ChangeNotifier {
 
   final debouncer = Debouncer(duration: const Duration(milliseconds: 500));
 
-  final StreamController<List<Picture>> _suggestionStreamController =
-      StreamController.broadcast();
-  Stream<List<Picture>> get suggestionStream =>
-      _suggestionStreamController.stream;
+  // final StreamController<List<Picture>> _suggestionStreamController =
+  //     StreamController.broadcast();
+  // Stream<List<Picture>> get suggestionStream =>
+  //     _suggestionStreamController.stream;
 
   loadcontroller() {
     // scrollcontroller = ScrollController()..addListener(getNowPlayingRecipe);
